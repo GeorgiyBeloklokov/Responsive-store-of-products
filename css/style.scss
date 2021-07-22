@@ -5,7 +5,7 @@ $gray: #CBCFD4;
 $light-gray: #F4F4F4;
 $dark-gray: #8D8D8D;
 $important: #D84033;
-
+$withe: #ffffff;
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,6 +20,9 @@ body {
 
   &-dark {
     background-color: $dark;
+  }
+  &-withe{
+    background-color: $withe;
   }
 }
 
@@ -78,6 +81,13 @@ body {
     display: block;
   }
 }
+.title-h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color:$dark;
+
+}
 
 .btn {
   background-color: $accent;
@@ -85,8 +95,22 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 10px 0 10px;
+  padding: 15px 10px 15px 10px;
+  &-xs{
+    display: block;
+text-align: center;
+    max-width: 70px;
 
+  }
+  &-center{
+    display: block;
+    max-width: 220px;
+    margin: 5px;
+    span{
+      margin-right: 20px;
+    }
+
+  }
   }
 
 
@@ -170,6 +194,7 @@ body {
     background-repeat: no-repeat;
     background-size: 190px 171px;
     background-position: calc(100% - 50px) bottom;
+
   }
   &-description{
     font-size: 16px;
@@ -181,5 +206,41 @@ margin-bottom: 30px;
   }
   &-woman{
     background-image: url(../img/woman.png);
+  }
+}
+
+.product{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &-item{
+    flex: 0 0 24%;
+    color:$dark;
+    position: relative;
+    &:before,&:after{
+      content: '';
+display: block;
+      width: 100%;
+      height: 25px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &:before{
+background-image: url(../img/item-top.svg);
+    }
+    &:after{
+      background-image: url(../img/item-bottom.svg);
+    }
+  }
+  &-title{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &-price{
+    font-size: 18px;
+    font-weight: 700;
+    color:$accent;
   }
 }

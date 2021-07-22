@@ -12,6 +12,9 @@ body {
 .page-dark {
   background-color: #212121;
 }
+.page-withe {
+  background-color: #ffffff;
+}
 
 .wrapper {
   transform: scale(0.7873);
@@ -63,13 +66,33 @@ body {
   display: block;
 }
 
+.title-h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+}
+
 .btn {
   background-color: #D7B399;
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 10px 0 10px;
+  padding: 15px 10px 15px 10px;
+}
+.btn-xs {
+  display: block;
+  text-align: center;
+  max-width: 70px;
+}
+.btn-center {
+  display: block;
+  max-width: 220px;
+  margin: 5px;
+}
+.btn-center span {
+  margin-right: 20px;
 }
 
 .main {
@@ -151,6 +174,42 @@ body {
 }
 .collection-woman {
   background-image: url(../img/woman.png);
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.product-item {
+  flex: 0 0 24%;
+  color: #212121;
+  position: relative;
+}
+.product-item:before, .product-item:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product-item:before {
+  background-image: url(../img/item-top.svg);
+}
+.product-item:after {
+  background-image: url(../img/item-bottom.svg);
+}
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #D7B399;
 }
 
 /*# sourceMappingURL=style.css.map */
