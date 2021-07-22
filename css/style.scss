@@ -9,13 +9,16 @@ $important: #D84033;
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.page{
+
+.page {
   padding-top: 100px;
   padding-bottom: 100px;
-  &-light{
+
+  &-light {
     background-color: $light;
   }
-  &-dark{
+
+  &-dark {
     background-color: $dark;
   }
 }
@@ -82,10 +85,10 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 15px 10px 0 10px;
 
+  }
 
-}
 
 .main {
   display: flex;
@@ -116,7 +119,7 @@ body {
     position: absolute;
     right: 0;
     text-align: right;
-    top:36px;
+    top: 36px;
 
     &-old {
       font-size: 24px;
@@ -124,24 +127,59 @@ body {
       letter-spacing: 5px;
 
     }
+
     &-new {
       font-size: 42px;
       font-weight: 700;
-      color:$important;
+      color: $important;
       margin-top: 20px;
     }
   }
 }
-.notice{
-  color:#ffffff;
+
+.notice {
+  color: #ffffff;
   padding: 50px 0;
   margin-top: -65px;
   text-align: center;
-  &-title{
+
+  &-title {
     font-size: 30px;
     text-transform: uppercase;
-    span{
+
+    span {
       font-weight: 700;
     }
+  }
+}
+
+.collection {
+  display: flex;
+  justify-content: space-between;
+  color: $dark;
+
+  &-title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &-item{
+    flex: 0 0 50%;
+    padding: 50px 0;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: 190px 171px;
+    background-position: calc(100% - 50px) bottom;
+  }
+  &-description{
+    font-size: 16px;
+margin-bottom: 30px;
+
+  }
+  &-man{
+    background-image: url(../img/man.png);
+  }
+  &-woman{
+    background-image: url(../img/woman.png);
   }
 }
