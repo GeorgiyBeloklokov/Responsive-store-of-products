@@ -532,13 +532,6 @@ html {
   font-size: 12px;
 }
 
-/*.nav-link {
-  color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 4px;
-}*/
 .nav-link::before {
   position: absolute;
   content: "";
