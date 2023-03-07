@@ -3,4 +3,6 @@
 # Responsive-store-of-products
 This is an adaptive store of products, layout is only scss, without using libraries
 
+Deploy: https://georgiybeloklokov.github.io/Responsive-store-of-products/
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/de9ba509-d396-45fa-bb30-eecd22727266/deploy-status)](https://app.netlify.com/sites/responsive-store-of-products/deploys)
